@@ -1,0 +1,19 @@
+1. perbedaan antara Class String,StringBuffer dan StringBuilder
+
+   Class String berisi string yang tetap (immutable string). Artinya sekali intance String dibuat maka isinya tidak bisa diubah 
+   sedangkan Class StringBuffer bersifat mutable, atau dapat diubah atau dimodifikasi dengan menggunakan beberapa method yang dimilikinya. 
+   dan StringBuilder adalah string yang bersifat mutable. Operasi yang dimiliki class StringBuilder mirip dengan class StringBuffer. 
+   Perbedaannya adalah StringBuilder tidak mendukung sinkronisasi.
+
+2. Apakah yang dimaksud dengan sifat mutable dan immutable? Beri contoh!
+
+    Immutable merupakan tipe variabel yang tidak bisa diubah. Tipe data yang termasuk immutable adalah string dan number.
+    Sedangkan mutable merupakan tipe variabel yang bisa diubah. Di javascript tipe data object dan array merupakan mutable.
+    contohnya:
+    - String str = "lab_PBO";
+    - StringBuffer sb1 = new StringBuffer("lab_PBO");
+	yang dapat diubah dengan operasi dari method append dan insert
+
+3. Jelaskan operasi utama append dan insert yang dimiliki oleh StringBuffer!
+    Method append selalu menambahkan teks diakhir string, sedang method insert menambahkan teks di posisi tertentu.
+
