@@ -1,12 +1,4 @@
-/**
- * The CD class represents a CD object. Information about the 
- * CD is stored and can be retrieved.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version 2008.03.30
- */
-public class CD
-{
+public class CD {
     private String title;
     private String artist;
     private int numberOfTracks;
@@ -16,13 +8,13 @@ public class CD
 
     /**
      * Initialize the CD.
-     * @param theTitle The title of the CD.
+     * 
+     * @param theTitle  The title of the CD.
      * @param theArtist The artist of the CD.
-     * @param tracks The number of tracks on the CD.
-     * @param time The playing time of the CD.
+     * @param tracks    The number of tracks on the CD.
+     * @param time      The playing time of the CD.
      */
-    public CD(String theTitle, String theArtist, int tracks, int time)
-    {
+    public CD(String theTitle, String theArtist, int tracks, int time) {
         title = theTitle;
         artist = theArtist;
         numberOfTracks = tracks;
@@ -33,48 +25,44 @@ public class CD
 
     /**
      * Enter a comment for this CD.
+     * 
      * @param comment The comment to be entered.
      */
-    public void setComment(String comment)
-    {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 
     /**
      * @return The comment for this CD.
      */
-    public String getComment()
-    {
+    public String getComment() {
         return comment;
     }
 
     /**
      * Set the flag indicating whether we own this CD.
+     * 
      * @param ownIt true if we own the CD, false otherwise.
      */
-    public void setOwn(boolean ownIt)
-    {
+    public void setOwn(boolean ownIt) {
         gotIt = ownIt;
     }
 
     /**
      * @return true if we own a copy of this CD.
      */
-    public boolean getOwn()
-    {
+    public boolean getOwn() {
         return gotIt;
     }
 
     /**
      * Print details about this CD to the text terminal.
      */
-    public void print()
-    {
+    public void print() {
         System.out.print("CD: " + title + " (" + playingTime + " mins)");
-        if(gotIt) {
+        if (gotIt) {
             System.out.println("*");
-        }
-	else {
+        } else {
             System.out.println();
         }
         System.out.println("    " + artist);
